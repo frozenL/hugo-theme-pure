@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language }}">
   <head>
+    <meta name="google-site-verification" content="5By1QFLPpTlxHOq-jRIDhld8SZQ3IzU1c3nfRs0tQjM" />
     <title>
       {{- block "title" . -}}
       {{ if .IsPage }}
@@ -11,6 +12,7 @@
     </title>
     {{ partial "head.html" . }}
   </head>
+
   {{- $.Scratch.Add "bodyClass" slice }}
   {{- $config := .Site.Params.config }}
   {{- if $config.layout }}
